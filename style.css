@@ -105,12 +105,26 @@
       font-size: 0.9em;
       color: #777;
     }
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      .hero-text h2 {
-        font-size: 2em;
-      }
-    }
+
+/* ✅ Responsive for Mobile Screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image {
+    text-align: center;
+  }
+}
